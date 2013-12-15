@@ -9,33 +9,45 @@ namespace Exo1
     {
         static void Main(string[] args)
         {
-            /* bool faire = true;
-             int i = 0;
-             while (faire == true)
-             {
-                 Console.WriteLine("Choisir un exo" + '\n' + "1) Exo1" + '\n' + "2) Exo2");
-                 i = Console.Read() - 48;
-                 switch (i)
-                 {
-                     case 1 :
-                         Exo1();
-                         break;
-                     case 2 :
-                         Exo2();
-                         break;
-                     default:
-                         Console.WriteLine("Cet Exercice n'existe pas");
-                         break;
-                 }
-             }*/
-            //Exo1();
-            //Exo2();
-            //Exo3();
-            Exo7();
+            while (true)
+            {
+                Console.WriteLine("Choisir un exo");
+                Console.WriteLine("exo1 \n exo2 \n exo3 \n exo4 \n exo5 \n exo6 \n exo7");
+                string exo = Console.ReadLine();
+                switch (exo.ToLower())
+                {
+                    case "exo1":
+                        Exo1();
+                        break;
+                    case "exo2":
+                        Exo2();
+                        break;
+                    case "exo3":
+                        Exo3();
+                        break;
+                    case "exo4":
+                        Exo5();
+                        break;
+                    case "exo5":
+                        Exo5();
+                        break;
+                    case "exo6":
+                        Exo6();
+                        break;
+                    case "exo7":
+                        Exo7();
+                        break;
+                    default :
+                        Console.WriteLine("Cet exercice n'existe pas");
+                            break;
+                }
+            }
+  
         }
 
         static void Exo1()
         {
+            Console.WriteLine("donner un entier");
             int i = Convert.ToInt32(Console.ReadLine());
             while (i > 0)
             {
